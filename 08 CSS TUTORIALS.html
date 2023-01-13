@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TUTORIALS</title>
+</head>
+<header>
+    <center>
+        <h2 id="HEADER">THIS IS HEADER</h2>
+        <hr>
+    </center>
+</header>
+
+<style>
+    /* THIS IS AN EXAMPLE OF INTERNAL CSS */
+    /* ID SELECTOR */
+    #FIRST {
+        color: rgb(95, 89, 7);
+        border: 4px dotted black;
+
+    }
+
+    /* CLASS SELECTOR */
+    .PINKBG,.redft {
+        background-color: pink;
+        font-style: italic;
+        border: 5px double greenyellow;
+    }
+
+    .blueft {
+        font-size: large;
+        color: blue;
+        font-style: oblique;
+        font-weight: 600;
+    }
+
+    /* GROUP SELECTOR */
+    footer,span {
+        background-color: brown;
+        color: aliceblue;
+
+    }
+</style>
+
+<!--THIS IS AN EXAMPLE OF EXTERNAL CSS -->
+<link rel="stylesheet" href="08 CSS TUTORIALS.css">
+<!-- {NOTE :- THE LINE WHICH IS WRITTEN AT LAST JUST LIKE IN THIS CASE , INTERNAL CSS IS UPPER AND EXTERNAL IS AT LOWER SIDE ; SOO EXTERNAL WILL HAVE HIGH ORDER AND IT WILL BE FOLLOWED} -->
+<body>
+    <h2>CSS TUTORIALS</h2>
+    <strong>
+        <p id="FIRST" class="PINKBG">HII EVERYBODY, THIS IS A DEMO PARAGRAPH</p>
+    </strong>
+    <p class="redft">HII EVERYBODY, THIS IS ANOTHER DEMO PARAGRAPH</p>
+    <p class="blueft">HII EVERYBODY, THIS IS YET ANOTHER DEMO PARAGRAPH</p>
+    <p class="PINKBG redft">HII EVERYBODY, THIS IS YET YET ANOTHER DEMO PARAGRAPH</p>
+    <div>
+        <span>JUST A WRITE UP</span>
+    </div>
+    <br>
+    <center>
+        <hr><footer> THIS IS FOOTER OF MY PAGE</footer>
+    </center>
+</body>
+
+</html>

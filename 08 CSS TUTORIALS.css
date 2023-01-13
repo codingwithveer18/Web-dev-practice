@@ -1,0 +1,23 @@
+
+    /* THIS IS AN EXAMPLE OF EXTERNAL CSS */
+   #HEADER{
+    background-color: brown;
+    color: aliceblue;
+   }
+    #FIRST{
+        color: rgb(117, 19, 104);
+        border: 4px double green;
+        background-color: aqua;
+         }
+    .PINKBG, .redft{
+        background-color: rgb(158, 231, 158);
+        font-style: italic;
+        border: 3px solid firebrick;
+    }
+    .blueft{
+        font-size: large;
+        color: rgb(24, 63, 2);
+        font-style: oblique;
+        font-weight: 600;
+        background-color: blanchedalmond;
+    }

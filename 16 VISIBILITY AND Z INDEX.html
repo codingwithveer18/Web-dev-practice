@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIBILITY AND Z INDEX</title>
+</head>
+<style>
+    /* z-index will only work for position{absolute, relative, sticky, fixed} */
+    .box {
+        height: 200px;
+        width: 200px;
+        border: 10px solid black;
+    }
+
+    #box1 {
+        background-color: aqua;
+        position: relative;
+        top: 60px;
+        z-index: 35;
+        /* is any other box will have higher z index than 35 then that box will dominate */
+    }
+
+    #box2 {
+        background-color: blue;
+        position: relative;
+        top: 15px;
+        z-index: 34;
+        /* box2 z index has lower value than box1 soo, box1 will dominate */
+        /* visibility: hidden ; */
+        /* the box wil hide but the space will be there */
+    }
+
+    #box3 {
+        background-color: rebeccapurple;
+        /* display:none ; */
+        /* the box wil get removed and the space will not be there */
+    }
+
+    #box4 {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

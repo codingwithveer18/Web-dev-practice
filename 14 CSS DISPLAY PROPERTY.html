@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY PROPERTY</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    header{
+        border: 2px double black;
+        margin: auto;
+        width: 1400px;
+    }
+    img{
+        width: 80px;
+        margin: 5px auto;
+        display:block;
+        /* WITH THIS WE CAN REDEFINE THE PROPERTY OF THAT ELEMENT WHETHER BLOBK OR INLINE , AND BLOCK HELPS TO SET MARGIN AND WIDTH
+        BUT TAKE THE WHOLE BLOCK */
+
+    }
+    h2{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        margin: 3px;
+        text-align: center;
+        border: 3px dotted;
+    }
+    .box{
+        border: 8px double sienna ;
+        background-color: aqua;
+        margin:5px 0px;
+        box-sizing: border-box;
+        /* BY USING THIS, TOTAL WIDTH INCLUDING MARGIN AND PADDING WILL BE THAT WHICH YOU WILL WRITE HERE, MEANS REMAINS CONST */
+        padding: 20px;
+        display: inline-block;
+        /* TO SET MARGIN AND WIDTH OF THE ELEMENT CONATAINING BOTH INLINE AND BLOCK ELEMENT */
+        width: 33%;
+    }
+    .container{
+        width: 1400px;
+        text-align: center;
+        margin: auto;;
+    }
+</style>
+<body>
+    <header class="top">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/640px-SNice.svg.png" alt="ERROR" height="90px" width="90px">
+        <h2>WELCOME TO MY BLOG</h2>
+    </header>
+        <div class="container">
+            <div class="box">
+                <h3 class="heading">This is heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui temporibus, ratione reiciendis nemo fugit repellat cumque nihil aperiam maxime rerum quas voluptatum vel, hic totam corrupti earum. Maiores animi, fugiat adipisci vel laborum dicta.</p>
+            </div>
+            <div class="box">
+                <h3 class="heading">This is heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui temporibus, ratione reiciendis nemo fugit repellat cumque nihil aperiam maxime rerum quas voluptatum vel, hic totam corrupti earum. Maiores animi, fugiat adipisci vel laborum dicta.</p>
+            </div>
+            <div class="box">
+                <h3 class="heading">This is heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui temporibus, ratione reiciendis nemo fugit repellat cumque nihil aperiam maxime rerum quas voluptatum vel, hic totam corrupti earum. Maiores animi, fugiat adipisci vel laborum dicta.</p>
+            </div>
+        </div>
+    
+</body>
+</html>

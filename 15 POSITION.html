@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    /* position: absolute  {It basically relates the element to the parent and didn't allow gap}*/
+    /* position: relative  {It basically relates the element to its normal position and allow gap}*/
+    /* position: statis {It is the by default position of the element}*/
+    /* position: fixed  {It basically fixed the element to the alloted area and when scroll , will remain fixed there*/
+    /* position: sticky  {It basically sticks the element to that same space where it was initial or being set!, soo whnwn scroll, the box will sticks there*/
+.container{
+    background-color: khaki;
+    height: 3000px;
+    font-size: 100px;
+}
+.box{
+border: 10px solid violet;
+height: 400px;
+width: 400px;
+display: inline-block;
+margin: 10px;
+text-align: center;
+}
+#box2{
+    position: sticky;
+    top: 4px;
+}
+#box3{
+    position: relative;
+    top: 44px;
+    right: 4px;
+}
+#box4{
+    position:fixed;
+    bottom: 104px;
+    right: 60px;
+}
+</style>
+<body>
+<div class="container">
+    <div class="box" id="box1">
+        HII HELLO
+    </div>
+    <div class="box" id="box2">
+        KESE HO
+    </div>
+    <div class="box" id="box3">
+        SAB BADIYA
+    </div>
+    <div class="box" id="box4">
+        BYE
+    </div>
+</div>
+</body>
+</html>

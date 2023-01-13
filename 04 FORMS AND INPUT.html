@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS AND INPUT</title>
+</head>
+
+<body>
+    <h2>BASIC INFORMATION</h2>
+    <hr>
+    <form action="backend.php">
+        <!--LABEL TAG IS USED WHEN YOU HOVER ON THE TEXT , THEN IT's BOX WILL BE SELECTED-->
+        <div>
+            <label for="NAME">
+                <span style="border: 5px solid blue;">NAME:</span> <input type="text" name="MYNAME" id="NAME">
+            </label>
+        </div>
+        <!--style is used to make a border on the text {5px is used to determine the boldness of the border} and{solid is used to determine whether the line is solid or dotted}-->
+        <div>
+            <label for="CLASS">
+                <br><span style="border: 5px solid red;">CLASS:</span> <input type="text" name="MYCLASS" id="CLASS">
+            </label>
+        </div>
+        <div>
+            <label for="EMAIL">
+                <br><span style="border: 5px solid violet;">EMAIL:</span><input type="text" name="MYEMAIL" id="EMAIL">
+            </label>
+        </div>
+        <div>
+            <label for="MOBILE">
+                <br><span style="border: 5px solid green;">MOBILE NUMBER:</span> <input type="number" name="MYNUMBER"
+                    id="MOBILE">
+            </label>
+        </div>
+        <div>
+            <br><span style="border: 5px solid yellow;">GENDER:</span> Male<input type="radio" name="MYGENDER">
+            Female<input type="radio" name="MYGENDER">
+            Other<input type="radio" name="MYGENDER">
+        </div>
+        <div>
+            <h3><span style="border: 6px solid magenta;">WANT TO GIVE VOTE?</span></h3>
+            <span style="border: 5px solid palegreen;"> ARE YOU ELIGIBLE? : </span><input type="checkbox"
+                name="MYCHECKBOX" unchecked>
+        </div>
+        <div>
+            <br><span style="border: 5px solid goldenrod;"><input type="submit" value="SUBMIT NOW"></span>
+            <span style="border: 5px solid goldenrod;"><input type="reset" value="RESET NOW"></span>
+        </div>
+        <div>
+            <br><label for="CAR">CAR</label>
+            <select name="mycar" id="CAR">
+            <option value="BMW" >BMW</option>
+            <option value="AUDI">AUDI</option>
+        </select>
+        </div>
+        <div>
+            <br><span style="border: 6px solid burlywood;">WANT TO SAY SOMETHING:</span><br>
+            <br><textarea name="MYTEXT" cols="30" rows="2">
+            </textarea>
+        </div>
+
+    </form>
+</body>
+
+</html>

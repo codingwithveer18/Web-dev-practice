@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: block;
+            width: 100px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        /* IF WANT TO USE CSS ON A PARTICULAR ITEM THEN WE WILL WRITE OR TARGET THAT ITEM INSIDE [] BRACKETS */
+        input[type='text'] {
+            padding: 20px;
+            border: 3px solid navy;
+        }
+
+        a[target='_blank'] {
+            font-size: 20px;
+            color: aquamarine;
+        }
+
+        a[target='_self'] {
+            font-size: 20px;
+            color: firebrick;
+        }
+
+        input[type='email'] {
+            border: 5px dotted greenyellow;
+        }
+
+        /* THIS WILL APPLY CSS TO 7th CHILD OR ITEM IN LI  */
+        li:nth-child(7) {
+            color: blue;
+        }
+
+        /* THIS WILL APPLY CSS TO 1st CHILD OR ITEM IN LI  */
+        li:nth-child(1) {
+            color: red;
+        }
+
+        /* THIS WILL APPLY CSS TO EVERY 2nd CHILD  */
+        li:nth-child(2n+0) {
+            color: forestgreen;
+        }
+
+        /* THIS WILL APPLY CSS TO EVERY 5th CHILD  */
+        li:nth-child(3n+5) {
+            color: darkgoldenrod;
+        }
+
+        /* Odd child selector */
+        li:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        /* Even child selector */
+        li:nth-child(even) {
+            background-color: fuchsia;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="https://google.com" target="_blank">GO TO GOOGLE</a></h1>
+        <h1><a href="https://meet.google.com/" target="_self">GO TO GOOGLE MEET</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

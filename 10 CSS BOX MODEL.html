@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX MODEL</title>
+</head>
+<style>
+    /* UNIVERSAL SELECTOR */
+    /* *{
+        box-sizing: border-box;
+        width: 800px;
+        padding: 0;
+        margin: 0;
+    } */
+    body{
+        background-color:brown;
+    }
+    .container{
+        background-color: aquamarine;
+        padding: 34px 25px;
+        border: 6px double rgb(2, 15, 15);
+        margin: 14px 19px;
+        width: 533px;
+        box-sizing: border-box;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>THIS IS HEADING</h2>
+        <p id="firstpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, perferendis nihil iste
+            labore, voluptate nemo nobis tempore nostrum laboriosam voluptatibus architecto totam velit quis nulla eius
+            ipsa. Corporis, earum facilis.</p>
+    </div>
+    <div class="container">
+        <h2>THIS IS SECOND HEADING</h2>
+        <p id="secondpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, perferendis nihil iste
+            labore, voluptate nemo nobis tempore nostrum laboriosam voluptatibus architecto totam velit quis nulla eius
+            ipsa. Corporis, earum facilis.</p>
+    </div>
+    <div class="container">
+        <h2>THIS IS THIRD HEADING</h2>
+        <p id="thirdpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, perferendis nihil iste
+                labore, voluptate nemo nobis tempore nostrum laboriosam voluptatibus architecto totam velit quis nulla eius
+                ipsa. Corporis, earum facilis.</p>
+    </div>
+</body>
+</html>

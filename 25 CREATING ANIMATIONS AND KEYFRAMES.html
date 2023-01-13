@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyframes and Animations</title>
+</head>
+<style>
+    .container {
+        background-color: greenyellow;
+    }
+
+    .box {
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+        position: relative;
+        /* animation-name: veer1; */
+        animation-name: veer2;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 3s; */
+        /* animation-direction: reverse;  */
+
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name  animation-duration  animation-timing-function  animation-delay  animation-iteration-count animation-fill-mode; */
+        /* animation: veer 5s ease-in 1s 12 backwards; */
+
+    }
+
+    @keyframes veer2 {
+        0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top: 0px;
+            left: 250px;
+            text-align: center;
+            color: aqua;
+            background-color:black ;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+            color: bisque;
+            text-align: justify;
+        }
+        100%{
+            top: 250px;
+            left: 0px;
+        }
+    }
+    @keyframes veer1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 1400px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veritatis ipsa eos quisquam harum nihil delectus illum odit, aliquam, itaque nemo iure inventore? Beatae tempora quae distinctio, magnam ratione laboriosam.<p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGNMENT</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container {
+        width: 900px;
+        border: 3px solid black;
+        background-color: blue;
+        margin: 12px auto;
+        /* margin auto will make the box or contsiner in the center wrt x axis */
+    }
+
+    .item {
+        border: 4px double darkred;
+        margin: 10px 3px;
+        padding: 10px 3px;
+        background: azure;
+    }
+
+    #first {
+        float: left;
+        /* IT WILL SHIFT EVERYTHING TO THE LEFT ALIGNMENT */
+        width: 48%;
+    }
+
+    #second {
+        float: right;
+        /* IT WILL SHIFT EVERYTHING TO THE RIGHT ALIGNMENT */
+        width: 48%;
+    }
+
+    #third {
+       clear: both;
+       /* THIS WILL REMOVE BOTH RIGHT AND LEFT FLOAT TO NOT DISTURBING THEM BY OVERLAPPING IT */
+        width: 99%;
+    }
+    h1{
+        text-align: center;
+        margin: 10px auto;
+        width: 600px;
+        background-color: aliceblue;
+        padding: 10px ;
+        border: 4px double black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+        <div id="first" class="item">
+            <h2>THIS IS FIRST</h2>
+            <p id="firstpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repudiandae
+                sit hic unde tempora, cumque quam nihil tempore consequatur distinctio repellendus ad praesentium
+                eligendi beatae soluta quisquam deleniti vel illum dignissimos quis non nesciunt! Reprehenderit
+                repellendus animi repudiandae dignissimos odit Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quam est nesciunt, explicabo laboriosam officiis quasi quis! Dolor, saepe illum. Est, repellendus ullam
+                quaerat eaque corrupti earum dolore hic eum nobis Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Placeat, doloremque quaerat culpa delectus officia minus quia maiores nemo modi ipsum dolorem
+                vitae numquam qui nostrum? Dolore sint voluptate quidem ea. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Eaque consectetur beatae magnam maiores nisi repellat nihil numquam a ducimus magni
+                molestias odio, nesciunt cupiditate ullam iure ipsam asperiores quo temporibus? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Doloremque placeat tempora aspernatur porro ipsum sed adipisci
+                similique vero laudantium repudiandae ullam necessitatibus tenetur laborum labore est, impedit hic!
+                Molestiae, velit.</p>
+        </div>
+        <div id="second" class="item">
+            <h2>THIS IS SECOND</h2>
+            <p id="secondpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repudiandae
+                sit hic unde tempora, cumque quam nihil tempore consequatur distinctio repellendus ad praesentium
+                eligendi beatae soluta quisquam deleniti vel illum dignissimos quis non nesciunt! Reprehenderit
+                repellendus animi repudiandae dignissimos odit Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quam est nesciunt, explicabo laboriosam officiis quasi quis! Dolor, saepe illum. Est, repellendus ullam
+                quaerat eaque corrupti earum dolore hic eum nobis Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Placeat, doloremque quaerat culpa delectus officia minus quia maiores nemo modi ipsum dolorem
+                vitae numquam qui nostrum? Dolore sint voluptate quidem ea. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Eaque consectetur beatae magnam maiores nisi repellat nihil numquam a ducimus magni
+                molestias odio, nesciunt cupiditate ullam iure ipsam asperiores quo temporibus? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Doloremque placeat tempora aspernatur porro ipsum sed adipisci
+                similique vero laudantium repudiandae ullam necessitatibus tenetur laborum labore est, impedit hic!
+                Molestiae, velit.</p>
+        </div>
+        <div id="third" class="item">
+            <h2>THIS IS THIRD</h2>
+            <p id="thirdpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repudiandae
+                sit hic unde tempora, cumque quam nihil tempore consequatur distinctio repellendus ad praesentium
+                eligendi beatae soluta quisquam deleniti vel illum dignissimos quis non nesciunt! Reprehenderit
+                repellendus animi repudiandae dignissimos odit.</p>
+        </div>
+    </div>
+</body>
+
+</html>

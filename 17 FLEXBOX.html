@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .items {
+        background-color: tomato;
+        border: 3px solid blueviolet;
+        margin: 10px;
+        padding: 3px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .container {
+        height: 544px;
+        width: 100%;
+        border: 3px solid black;
+        display: flex;
+        /*IT WILL INITIALIZE THE CONTAINER AS FLEX BOX */
+
+        /* FLEX PROPERTIES */
+        /* flex-direction: row;*/
+        /* flex-wrap: wrap ; */
+        /* flex-flow: row wrap; */
+        /* justify-content: center; BRING BOXES TO CENTRE OF ROW */
+        /* justify-content: flex-end; */
+        /* justify-content: space-around; EQUAL SPACE AROUND THE BOXES */
+        /* justify-content: space-between;EQUAL SPACE BETWEEN THE BOXES */
+        /* justify-content: space-evenly; EVEN SPACE BETWEEN CORNERS AND BOXES */
+        /* align-items: center; align boxes to the center of the container */
+        /* align-items: flex-end; align boxes to the end of the container */
+        /* align-items: flex-start; it is the default value to set boxes in the container */
+        /* align-items: stretch; align space evenly in between them */
+    }
+
+    #item-1 {
+        /* HIGHER THE ORDER, THAT ELEMENT WILL BE DISPLAY IN THE END */
+        /* order: 2; */
+        /* HIGHER THE FLEX GRoW, THAT ELEMENT WILL BE GROW FASTER WHEN CONTAINER EXPANDS */
+        /* flex-grow: 4; */
+        align-self: center;
+        /* will align that box to center from its initial position */
+    }
+
+    #item-2 {
+        /* order: 4; */
+        /*  flex-grow: 3; */
+        flex-basis: 300px;
+        /* when flex-direction set to row, flex-basis will control width */
+        /* when flex-direction set to column, flex-basis will control height */
+    }
+
+    #item-3 {
+        /* order: 1; */
+        /* HIGHER THE FLEX SHRINK, THAT ELEMENT WILL BE SHRINK FASTER WHEN CONTAINER COLLAPS */
+        flex-shrink: 2;
+    }
+
+    #item-4 {
+        /* order: 3; */
+        flex-shrink: 4;
+    }
+</style>
+
+<body>
+    <h1>THIS IS FLEXBOX</h1>
+    <div class="container">
+        <div class="items" id="item-1">FIRST BOX</div>
+        <div class="items" id="item-2">SECOND BOX</div>
+        <div class="items" id="item-3">THIRD BOX</div>
+        <div class="items" id="item-4">FOURTH BOX</div>
+    </div>
+
+</body>
+
+</html>
